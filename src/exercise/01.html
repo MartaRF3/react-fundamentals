@@ -1,6 +1,25 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic React - React Fundamentals | Exercise 1</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script type="module">
+      let div = document.createElement('div');
+      let root = document.getElementById('root');
+      div.textContext = 'Hello World!!!';
+      div.classList.add('container');
+      root.append(div);
+    </script>
+  </body>
+</html>
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
